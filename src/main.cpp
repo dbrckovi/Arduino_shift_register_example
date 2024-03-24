@@ -9,7 +9,7 @@ For this to work, connect shift register (SNx4HC595) like this
  - output pins each to LED -> 1k resistor -> GND
 */
 
-#define SRCLR 2       //CLEAR        - clears memory when going LOW -> HIGH
+//#define SRCLR 2       //CLEAR        - clears memory when going LOW -> HIGH
 #define SER 4         //DATA         - value is copied to first output pin when SRCLK goes LOW -> HIGH
 #define RCLK 5        //OUTPUT CLOCK - data is copied to output pins when RCLK goes LOW -> HIGH
 #define SRCLK 6       //INPUT CLOCK  - data from SER pin is copied to first output when SRCLK goes LOW -> HIGH
@@ -21,12 +21,12 @@ void Show();
 
 void setup() 
 {
-  pinMode(SRCLR, OUTPUT);
+  //pinMode(SRCLR, OUTPUT);
   pinMode(SER, OUTPUT);
   pinMode(RCLK, OUTPUT);
   pinMode(SRCLK, OUTPUT);
 
-  digitalWrite(SRCLR, HIGH);
+  //digitalWrite(SRCLR, HIGH);
   digitalWrite(SER, LOW);
   digitalWrite(RCLK, LOW);
   digitalWrite(SRCLK, LOW);
