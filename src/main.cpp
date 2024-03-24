@@ -1,9 +1,9 @@
 #include <Arduino.h>
 
-#define SRCLR 2
-#define SER 4
-#define RCLK 5
-#define SRCLK 6  
+#define SRCLR 2       //clears memory when going LOW -> HIGH
+#define SER 4         //value is copied to first output pin when SRCLK goes LOW -> HIGH
+#define RCLK 5        //data is copied to output pins when RCLK goes LOW -> HIGH
+#define SRCLK 6       //data from SER pin is copied to first output when SRCLK goes LOW -> HIGH
 
 uint8_t value = 1;
 bool going_up = true;
