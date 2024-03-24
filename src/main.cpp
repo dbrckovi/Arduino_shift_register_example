@@ -1,5 +1,14 @@
 #include <Arduino.h>
 
+/*
+For this to work, connect shift register (SNx4HC595) like this
+ - VCC to +5V
+ - GND to GND
+ - OE pin to GND
+ - everything else like defined in global variables
+ - output pins each to LED -> 1k resistor -> GND
+*/
+
 #define SRCLR 2       //CLEAR        - clears memory when going LOW -> HIGH
 #define SER 4         //DATA         - value is copied to first output pin when SRCLK goes LOW -> HIGH
 #define RCLK 5        //OUTPUT CLOCK - data is copied to output pins when RCLK goes LOW -> HIGH
