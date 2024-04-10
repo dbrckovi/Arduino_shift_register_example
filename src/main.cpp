@@ -54,20 +54,18 @@ void ShowDigit(byte digit)
   uint8_t outValue = 0;
 
   /*
-    7
-  6   1
-    2
-  5   3
-    4
 
-  76543210
-  10011110  3
-  01001110  4
-  11011100  5
-  11111100  6
-  10001010  7
-  11111111  8
-  11011111  9
+   777
+  6   1
+  6   1
+  6   1
+   222
+  5   3
+  5   3
+  5   3
+   444 
+
+  Segment representation by bit numbers
   */
 
   switch (digit)
